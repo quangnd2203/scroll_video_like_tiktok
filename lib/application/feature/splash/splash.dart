@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktoklikescroller/tiktoklikescroller.dart';
 import '../../../core/constants/app_images.dart';
 import '../widgets/image_network.dart';
 
@@ -19,16 +20,15 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        // child: Image.asset(
-        //   AppImages.png('logo'),
-        //   scale: 1.5,
-        // ),
-        child: ImageNetwork(
-          url: AppImages.png('logo'),
-          width: 200,
-          height: 200,
-        ),
+      body: TikTokStyleFullPageScroller(
+        contentSize: 10,
+        swipeVelocityThreshold: 2000,
+        animationDuration: const Duration(milliseconds: 150),
+        builder: (BuildContext context, int index) {
+          return Container(
+            color: Colors.primaries[index % Colors.primaries.length],
+          );
+        },
       ),
     );
   }

@@ -13,6 +13,11 @@ import '../../domain/usecase/user.dart';
 import '../../infrastructure/client/native_client.dart';
 import '../../infrastructure/repository/local_storage.dart';
 import '../../infrastructure/repository/user.dart';
+import '../../infrastructure/service/crashlytics.dart';
+import '../../infrastructure/service/firebase_message.dart';
+import '../../infrastructure/service/local_notification.dart';
+import '../../infrastructure/service/logger.dart';
+import '../../infrastructure/service/wifi.dart';
 import '../../interface/bloc/application/application_cubit.dart';
 import '../../interface/bloc/language/language_cubit.dart';
 import '../../interface/service/crashlytics.dart';
@@ -29,11 +34,6 @@ import '../../interface/usecase/notification.dart';
 import '../../interface/usecase/theme_mode.dart';
 import '../../interface/usecase/user.dart';
 import '../constants/app_values.dart';
-import '../service/crashlytics.dart';
-import '../service/firebase_message.dart';
-import '../service/local_notification.dart';
-import '../service/logger.dart';
-import '../service/wifi.dart';
 
 class AppBinding extends Bindings{
 

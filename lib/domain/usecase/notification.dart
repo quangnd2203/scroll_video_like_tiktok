@@ -21,8 +21,10 @@ class NotificationUseCase implements INotificationUseCase{
   Future<void> initialize() async {
     await firebaseMessageService.requestPermission();
     await firebaseMessageService.setAutoInitEnabled(true);
-    firebaseMessageService.getFcmToken().then((value){
+    firebaseMessageService.getFcmToken().then((String? value){
       loggerService.debug('FCM Token: $value');
+    }).catchError((dynamic error){
+      loggerService.error('FCM Token Error: $error');
     });
     await localNotificationService.initialize();
     onForegroundMessage();

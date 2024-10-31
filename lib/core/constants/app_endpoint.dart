@@ -4,6 +4,8 @@ class AppEndpoint {
   static const String USER_GET_ALL = '/api/users';
   static const String USER = '/api/users/{id}';
 
+  static const String TRAVEL_VIDEO = '/api/feed/travel';
+
   static const int connectionTimeout = 30000;
   static const int receiveTimeout = 30000;
   static const String keyAuthorization = 'Authorization';

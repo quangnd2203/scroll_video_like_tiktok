@@ -39,7 +39,9 @@ dependencies:
   flutter_svg: ^2.0.6
   device_info_plus: ^9.0.1
   cached_network_image: ^3.2.3
-  flutter_cache_manager: ^3.3.0
+  flutter_cache_manager: ^3.4.1
+  tiktoklikescroller: ^0.2.8
+  video_player: ^2.9.2
 #  custom_pop_up_menu:
 #    git:
 #      url: https://github.com/quangnd2203/custom_pop_up_menu
