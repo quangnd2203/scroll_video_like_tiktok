@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "78980006167",
+    "project_id": "vivi-notification",
+    "storage_bucket": "vivi-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78980006167:android:2898258e904ae7d1653752",
+        "android_client_info": {
+          "package_name": "com.vivi.wallet_user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78980006167-pkk0ghqss5d0p7fpmt7ojiokusivs67a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpakO5Ctdr0-PyHJP063jkBvThT99OD_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78980006167-pkk0ghqss5d0p7fpmt7ojiokusivs67a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
